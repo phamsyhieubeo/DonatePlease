@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-image: linear-gradient(to right, purple, blue);
+}
+
+body #title{
+  color: White;
+  font-family: Rubik Doodle Shadow;
+  text-align: center;
+  font-size: 350%;
+}
+
+body .DonationBox h1{
+  color: white;
+  font-family: Montserrat;
+  text-align: center;
+  font-size: 200%;
+  background: transparency;
+  backdrop-filter: blur(5px);
+}
+
+body .DonationBox .Paypal{
+  font-family: Montserrat;
+  text-decoration: none;
+  color: white;
+  border: black solid 3px;
+  padding: 1% 2%;
+  border-radius: 30px;
+  display: table;
+  margin: 0 auto;
+}
+
+body .DonationBox .Paypal:hover{
+  background-color: Blue;
+  color: white;
+}
+
+body .DonationBox .Vietnam{
+  font-family: Montserrat;
+  text-decoration: none;
+  color: white;
+  border: black solid 3px;
+  padding: 1% 2%;
+  border-radius: 30px;
+  display: table;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+body .DonationBox .Vietnam:hover{
+  background-color: white;
+  color: black;
+}

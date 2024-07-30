@@ -57,3 +57,8 @@ body .DonationBox .Vietnam:hover{
   background-color: white;
   color: black;
 }
+
+p{
+  font-family: Montserrat;
+  font-size: 130px;
+}

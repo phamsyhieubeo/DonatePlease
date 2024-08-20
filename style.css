@@ -1,64 +1,99 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat");
-html {
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html, body {
   height: 100%;
-  width: 100%;
+  margin: 0;
 }
 
-body{
+body {
   background-image: linear-gradient(to right, purple, blue);
-}
-
-body #title{
-  color: White;
-  font-family: Rubik Doodle Shadow;
-  text-align: center;
-  font-size: 350%;
-}
-
-body .DonationBox h1{
   color: white;
-  font-family: Montserrat;
-  text-align: center;
-  font-size: 200%;
-  background: transparency;
-  backdrop-filter: blur(5px);
+  font-family: 'Montserrat', sans-serif;
 }
 
-body .DonationBox .Paypal{
-  font-family: Montserrat;
+header {
+  text-align: center;
+  padding: 2rem;
+}
+
+#title {
+  color: white;
+  font-family: 'Rubik Doodle Shadow', cursive;
+  font-size: 3rem;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 4rem); /* Adjust height to fit within viewport */
+}
+
+.donation-box {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+}
+
+.donation-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   color: white;
-  border: black solid 3px;
-  padding: 1% 2%;
-  border-radius: 30px;
-  display: table;
-  margin: 0 auto;
+  border: 2px solid black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
-body .DonationBox .Paypal:hover{
-  background-color: Blue;
-  color: white;
+.btn:hover {
+  transform: scale(1.05);
 }
 
-body .DonationBox .Vietnam{
-  font-family: Montserrat;
-  text-decoration: none;
-  color: white;
-  border: black solid 3px;
-  padding: 1% 2%;
-  border-radius: 30px;
-  display: table;
-  margin: 0 auto;
-  margin-top: 20px;
+.paypal {
+  background-color: transparent;
 }
 
-body .DonationBox .Vietnam:hover{
+.paypal:hover {
+  background-color: blue;
+}
+
+.vietnam {
+  background-color: transparent;
+}
+
+.vietnam:hover {
   background-color: white;
   color: black;
 }
 
-p{
-  font-family: Montserrat;
-  font-size: 130px;
+address {
+  margin-top: 2rem;
+}
+
+address p {
+  font-size: 1rem;
+  margin: 0;
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 10px;
+  display: inline-block;
 }
